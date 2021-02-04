@@ -1,18 +1,20 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
-const srcDir = path.join(__dirname, "..", "src");
+const srcDir = "../src/";
+var glob = require("glob");
 
 module.exports = {
-    entry: {
-      popup: path.join(srcDir, 'popup.tsx'),
-      options: path.join(srcDir, 'options.tsx'),
-      background: path.join(srcDir, 'background.ts'),
-      content_script: path.join(srcDir, 'content_script.tsx'),
-    },
+    entry: glob
+        .sync(path.join(__dirname, srcDir + "*.ts"))
+        .reduce(function (obj, el) {
+            obj[path.parse(el).name] = el;
+            return obj;
+        }, {}),
     output: {
         path: path.join(__dirname, "../dist/js"),
         filename: "[name].js",
+        // globalObject: `(typeof self !== 'undefined' ? self : this)`
     },
     optimization: {
         splitChunks: {
@@ -23,19 +25,31 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.ts?$/,
                 use: "ts-loader",
                 exclude: /node_modules/,
             },
         ],
     },
     resolve: {
-        extensions: [".ts", ".tsx", ".js"],
+        extensions: [".ts", ".js"],
+        fallback: {
+            util: require.resolve("util/"),
+            buffer: require.resolve("buffer/"),
+            url: require.resolve("url/"),
+            stream: require.resolve("stream-browserify"),
+            assert: require.resolve("assert"),
+        }
     },
     plugins: [
         new CopyPlugin({
             patterns: [{ from: ".", to: "../", context: "public" }],
             options: {},
         }),
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
+            Buffer: ['buffer', 'Buffer'],
+        })
     ],
 };
+

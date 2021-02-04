@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
-  "version": "1.0",
+  "name": "UnManaged Content Sea",
+  "description": "Decentralized",
+  "version": "1.0.1",
 
   "options_ui": {
     "page": "options.html",
@@ -15,16 +15,17 @@
     "default_popup": "popup.html"
   },
 
-  "content_scripts": [
-      {
-          "matches": ["<all_urls>"],
-          "js": ["js/vendor.js", "js/content_script.js"]
-      }
-  ],
-
   "background": {
     "scripts": ["js/vendor.js", "js/background.js"]
   },
+
+
+  "content_scripts": [
+      {
+          "matches": ["ipns://*"],
+          "js": ["js/vendor.js","js/tab.js"]
+      }
+  ],
 
   "permissions": [
     "storage",
