@@ -1,0 +1,437 @@
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=dfafd5d6-34ad-4e39-9831-5166069cb8ab");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4rem; }
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-right: 4rem; }
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.shown-till-md {
+  display: flex; }
+  @media (min-width: 900px) {
+    .shown-till-md {
+      display: none; } }
+
+.shown-from-md {
+  display: none !important; }
+  @media (min-width: 900px) {
+    .shown-from-md {
+      display: inline; } }
+
+.shown-from-lg {
+  display: none; }
+  @media (min-width: 1360px) {
+    .shown-from-lg {
+      display: inline; } }
+
+@font-face {
+  font-family: "Cabrito Sans W01 Ext Light";
+  src: url("/assets/fonts/8d728fb6-34b2-4252-92cd-6223bec46b53.eot?#iefix");
+  src: url("/assets/fonts/8d728fb6-34b2-4252-92cd-6223bec46b53.eot?#iefix") format("eot"), url("/assets/fonts/2799f5d3-78e9-40d4-94e5-4d6446f3ae5b.woff2") format("woff2"), url("/assets/fonts/f4e8452d-e7a4-4595-b6ee-0e98aa8eadb4.woff") format("woff"), url("/assets/fonts/5d12c8be-abe2-4f10-b705-25ad45a1f699.ttf") format("truetype"), url("/assets/fonts/878bb582-c61b-40f1-bbac-7b7c3e58fa82.svg#878bb582-c61b-40f1-bbac-7b7c3e58fa82") format("svg"); }
+
+@font-face {
+  font-family: "Cabrito Sans W01 Ext Book";
+  src: url("/assets/fonts/f38e9d2f-aa50-4a9d-8c7d-242abf1a9a4f.eot?#iefix");
+  src: url("/assets/fonts/f38e9d2f-aa50-4a9d-8c7d-242abf1a9a4f.eot?#iefix") format("eot"), url("/assets/fonts/5f9155ef-2494-462d-b090-ddc79732b2d8.woff2") format("woff2"), url("/assets/fonts/85b3f48f-a4f7-4205-b98e-e46fa8031ab2.woff") format("woff"), url("/assets/fonts/d9ac1e43-fd15-4e67-ace0-d6114639709a.ttf") format("truetype"), url("/assets/fonts/b68645d5-1f9c-4683-a8ff-812a3ed53f7f.svg#b68645d5-1f9c-4683-a8ff-812a3ed53f7f") format("svg"); }
+
+@font-face {
+  font-family: "Cabrito Sans W01 Norm Demi";
+  src: url("/assets/fonts/81691fc9-37c9-47a5-b820-cc7b96c883ad.eot?#iefix");
+  src: url("/assets/fonts/81691fc9-37c9-47a5-b820-cc7b96c883ad.eot?#iefix") format("eot"), url("/assets/fonts/2e2ee262-b702-4ddd-b13e-885ada52c314.woff2") format("woff2"), url("/assets/fonts/86f54a19-a25c-4b03-a40a-6b1bc96e6854.woff") format("woff"), url("/assets/fonts/31507c58-6559-4585-9eab-61a35be060fa.ttf") format("truetype"), url("/assets/fonts/3794f1c2-54d3-4761-bede-22b6b8ef22d5.svg#3794f1c2-54d3-4761-bede-22b6b8ef22d5") format("svg"); }
+
+@font-face {
+  font-family: "Cabrito Sans W01 Norm Bold";
+  src: url("/assets/fonts/5b79bc0c-656b-49e0-a2ff-20be2e9de4cd.eot?#iefix");
+  src: url("/assets/fonts/5b79bc0c-656b-49e0-a2ff-20be2e9de4cd.eot?#iefix") format("eot"), url("/assets/fonts/f13bfc3b-0642-4573-8ae7-5bd509aea920.woff2") format("woff2"), url("/assets/fonts/b5cf7ae3-6573-49c8-b2b1-8d7b05ad1fee.woff") format("woff"), url("/assets/fonts/ebb18e46-a54f-4515-952c-e4686e5450f7.ttf") format("truetype"), url("/assets/fonts/8cba8c91-108f-405e-a755-3853740ae53c.svg#8cba8c91-108f-405e-a755-3853740ae53c") format("svg"); }
+
+body, button, input, textarea {
+  font-family: 'Cabrito Sans W01 Ext Book', arial;
+  font-weight: normal;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.55; }
+  @media (min-width: 600px) {
+    body, button, input, textarea {
+      font-family: 'Cabrito Sans W01 Ext Book', arial;
+      font-weight: normal;
+      color: #333333;
+      font-size: 1.06rem;
+      line-height: 1.75; } }
+
+h1 {
+  font-family: 'Cabrito Sans W01 Norm Bold';
+  font-weight: normal;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  font-size: 2rem;
+  line-height: 1.5; }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.33; } }
+
+h2 {
+  font-family: 'Cabrito Sans W01 Norm Bold';
+  font-weight: normal;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  line-height: 1.85em;
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-family: 'Cabrito Sans W01 Norm Bold';
+  font-weight: normal;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  margin: 4px 0; }
+
+h4 {
+  font-family: 'Cabrito Sans W01 Norm Bold';
+  font-weight: normal;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  margin: 4px 0; }
+
+h5 {
+  font-family: 'Cabrito Sans W01 Norm Bold';
+  font-weight: normal;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  margin: 4px 0; }
+
+.smaller {
+  font-size: .9rem;
+  line-height: 1.7em; }
+
+.smallest {
+  font-size: .65rem;
+  line-height: 1.7em; }
+
+.boodschap {
+  display: block;
+  padding: 1rem;
+  color: #333333; }
+
+strong, .vet {
+  font-family: 'Cabrito Sans W01 Norm Bold'; }
+
+p {
+  margin: 0 0 1.5em 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #333333;
+  text-decoration: none; }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden; }
+
+p a, #story a, #page a {
+  color: #333333;
+  /*border-bottom: 1px solid $blauw; */
+  border-bottom: 1px solid #333333;
+  transition: all 250ms; }
+
+u {
+  text-decoration: none; }
+
+.datum, .light, .authors {
+  font-family: 'Cabrito Sans W01 Ext Light';
+  font-weight: normal; }
+
+.light {
+  font-size: .8rem;
+  font-family: 'Cabrito Sans W01 Ext Light';
+  line-height: 1.3; }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.75rem; } }
+
+form p {
+  line-height: 1.44;
+  margin: 1.5rem 0;
+  font-size: 1rem; }
+
+form input, form textarea, form select {
+  color: black;
+  font-size: 1.06rem;
+  line-height: 1.45; }
+
+form input {
+  padding: .5rem 0;
+  border: none;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  form input:focus {
+    border-color: black;
+    outline: none; }
+
+form textarea {
+  padding: 5px 10px;
+  border: none;
+  border: 1px solid #ddd; }
+  form textarea:focus {
+    border-color: black;
+    outline: none; }
+
+form .field-wrapper {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: auto;
+  margin: 1rem auto;
+  list-style: none;
+  /* :after does not work on input element directly */ }
+  form .field-wrapper li.checkbox {
+    padding: 0;
+    display: block;
+    position: relative;
+    width: 1.9rem;
+    height: 1.9rem;
+    background: white;
+    margin: 0 .5rem .75rem 0; }
+    form .field-wrapper li.checkbox input[type=checkbox] {
+      top: 0px;
+      margin-left: 8px;
+      opacity: 0;
+      position: relative;
+      cursor: pointer;
+      width: 8rem;
+      height: 1.6rem;
+      z-index: 999; }
+    form .field-wrapper li.checkbox label {
+      display: block;
+      position: absolute;
+      left: 2.5rem;
+      top: .3rem;
+      min-width: 20rem;
+      color: black;
+      font-size: 1rem;
+      line-height: 1.5; }
+      @media (min-width: 900px) {
+        form .field-wrapper li.checkbox label {
+          min-width: 50rem; } }
+  form .field-wrapper input, form .field-wrapper select, form .field-wrapper textarea {
+    position: relative;
+    width: calc(100% - 2rem);
+    padding: .6rem 1rem .4rem 1rem; }
+  form .field-wrapper input {
+    width: calc(100% - 2rem); }
+  form .field-wrapper textarea {
+    padding: 1rem;
+    width: calc(100% - 2rem); }
+  form .field-wrapper select {
+    position: relative;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* remove default arrow */
+    border-radius: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    background-size: 1.8rem 1.8rem;
+    background-image: url("/assets/icons/chevron-up.svg") no-repeat 95% 22px; }
+  form .field-wrapper textarea {
+    min-height: 200px; }
+  form .field-wrapper textarea:focus ~ label, form .field-wrapper textarea:valid ~ label {
+    /* , input:valid ~ label */
+    font-size: 1rem;
+    color: white;
+    left: 0rem;
+    top: -2.5rem; }
+  form .field-wrapper input:required:not([type="checkbox"]):after {
+    /* textarea:valid ~ label:after */
+    display: inline-block;
+    content: ' ';
+    background-image: url("/assets/icons/required.svg");
+    background-size: 1rem 1rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: .5rem;
+    position: absolute;
+    top: 3.75rem;
+    right: 1rem;
+    z-index: 999; }
+  form .field-wrapper input:required:valid:not([type="checkbox"]):after {
+    /* textarea:valid ~ label:after */
+    display: inline-block;
+    content: ' ';
+    background-image: url("/assets/icons/check.svg");
+    background-size: 1rem 1rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: .5rem;
+    position: absolute;
+    top: 3.75rem;
+    right: 1rem;
+    z-index: 999; }
+  form .field-wrapper input[aria-invalid="true"]:after {
+    display: inline-block;
+    content: ' ';
+    background-image: url("/assets/icons/warning.svg");
+    background-size: 1rem 1rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: .5rem;
+    position: absolute;
+    top: 3.75rem;
+    right: 1rem;
+    z-index: 999; }
+
+form .field-wrapper.half {
+  width: 100%; }
+  @media (min-width: 600px) {
+    form .field-wrapper.half {
+      width: calc(50% - .5rem); } }
+  @media (min-width: 600px) {
+    form .field-wrapper.half:nth-child(odd) {
+      width: calc(50% - 2.5rem);
+      padding-right: 2rem; } }
+
+form .field-wrapper.full {
+  width: 100%; }
+
+form #error, form div[role=alert] {
+  width: 100%;
+  color: #fff;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: block;
+  padding: 1rem;
+  color: black;
+  transition: opacity 500ms ease; }
+
+form #error:not(:empty), form div[role=alert]:not(:empty) {
+  opacity: 1; }
+
+form #error:empty, form div[role=alert]:empty {
+  opacity: 0;
+  display: none; }
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid gainsboro;
+  margin: 0 .5rem 0 0;
+  cursor: pointer; }
+
+.radio {
+  position: relative; }
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  top: 3px;
+  margin-left: 8px;
+  opacity: 0;
+  position: relative;
+  cursor: pointer; }
+
+.checkbox input[type=checkbox]:checked {
+  opacity: 0;
+  cursor: pointer; }
+
+.checkbox input[type=checkbox] + label {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  margin: 0;
+  cursor: pointer; }
+
+input[type="checkbox"]:checked ~ label:after {
+  display: inline-block;
+  content: " ";
+  background-size: 1.8rem 1.8rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  top: 0rem;
+  right: auto;
+  left: -2.4rem;
+  z-index: 99;
+  background-image: url("/assets/icons/check.svg"); }
+
+.radio input[type=radio] {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%; }
+
+.radio input[type=radio] + label {
+  margin-left: 10px;
+  margin-top: 5px;
+  display: inline-block; }
+
+button, input[type=submit] {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1em;
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0; }
+  button:disabled, input[type=submit]:disabled {
+    font-size: 0; }
+  button.large, input[type=submit].large {
+    width: calc(1220px / 3);
+    color: white; }
+    button.large:hover, input[type=submit].large:hover {
+      background: white; }
+  button.grey, input[type=submit].grey {
+    background: gainsboro;
+    color: #333333; }
+    button.grey span:after, input[type=submit].grey span:after {
+      border-top-color: #646464; }
+
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column; }
+  form .fieldgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem; }
+
+aside ul {
+  list-style: none; }

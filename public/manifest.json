@@ -20,15 +20,10 @@
   },
 
 
-  "content_scripts": [
-      {
-          "matches": ["ipns://*"],
-          "js": ["js/vendor.js","js/tab.js"]
-      }
-  ],
-
   "permissions": [
     "storage",
     "<all_urls>"
-  ]
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
 }

@@ -1,0 +1,33 @@
+body:not('#ucs_popup') {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-right: 4rem;
+
+}
+
+main {
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@import './_breakpoints';
+@import './_colours';
+@import './_fonts';
+@import "./_typography";
+
+@import "./form_elements";
+@import "./checkbox";
+@import "./buttons";
+@import './form.scss';
+@import "./aside";
+@import "./popup";

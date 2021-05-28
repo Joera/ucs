@@ -1,0 +1,13 @@
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  .fieldgroup {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+}

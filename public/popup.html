@@ -1,13 +1,37 @@
 <!doctype html>
-<html>
+<html style="width:400px;max-width:400px;">
   <head>
     <meta charset="UTF-8">
     <title>Content Sea</title>
+    <link rel="stylesheet" href="chrome-extension://noknnbahhppdblamiiamlgjpfjphhjjo/assets/main.css">
+    <style>
+
+      html,body {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        margin: 1rem;
+        overflow: hidden;
+      }
+
+      ul {
+        margin-top: 2rem;
+        max-width: 300px;
+        overflow: hidden;
+      }
+    </style>
   </head>
-  <body>
+  <body id="ucs_popup" style="width:400px;max-width:400px;">
+  <section>
   <h1>Content Sea</h1>
+
+    <div>Hello <span id="did-name"></span></div>
     <ul id="content_list"></ul>
-    <div id="root"></div>
+
+    <ul id="schema_list"></ul>
+
+  </section>
     <script src="js/popup.js"></script>
   </body>
 </html>

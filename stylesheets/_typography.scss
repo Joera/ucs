@@ -1,0 +1,200 @@
+@mixin bodyText() {
+
+	font-family: 'Cabrito Sans W01 Ext Book', arial;
+	font-weight: normal;
+	color: $zwart;
+	font-size: 1.06rem;
+	line-height: 1.75;
+}
+
+@mixin compactText() {
+
+	font-family: 'Cabrito Sans W01 Ext Book', arial;
+	font-weight: normal;
+	color: $zwart;
+	font-size: 1rem;
+	line-height: 1.55;
+}
+
+@mixin lightText {
+	font-size: .8rem;
+	font-family:'Cabrito Sans W01 Ext Light';
+	line-height: 1.3;
+}
+
+@mixin boldText {
+
+	font-family:'Cabrito Sans W01 Norm Bold';
+	font-weight: normal;
+	font-size: 1.06rem;
+	line-height: 1.3;
+}
+
+@mixin demiText() {
+
+	font-size: 1.33rem;
+	line-height: 1.45;
+	font-family: 'Cabrito Sans W01 Norm Demi';
+
+	@media (min-width: $breakpoint-sm) {
+		font-size: 1.1875rem;
+		line-height: 1.85em;
+	}
+}
+
+
+body, button, input, textarea {
+
+	@include compactText();
+
+	@media (min-width: $breakpoint-sm) {
+		@include bodyText();
+	}
+
+}
+
+h1 {
+	@include boldText();
+	font-size: 2rem;
+	line-height: 1.5;
+
+	@media (min-width: $breakpoint-sm) {
+		font-size: 2.5rem;
+		line-height: 1.33;
+	}
+}
+
+h2 {
+	@include boldText();
+	font-size: 1.4rem;
+	line-height: 1.85em;
+	padding: 0; 
+	margin: 0;
+} 
+
+h3 {
+	@include boldText();
+	margin: 4px 0;
+}
+
+h4 {
+	@include boldText();
+	margin: 4px 0;
+}
+
+h5 {
+	@include boldText();
+	margin: 4px 0;
+}
+
+.smaller {
+
+	font-size: .9rem;
+	line-height: 1.7em;
+}
+
+.smallest {
+
+	font-size: .65rem;
+	line-height: 1.7em;
+
+}
+
+.boodschap { display: block; padding: 1rem; color: $zwart; }
+
+strong, .vet {  font-family:'Cabrito Sans W01 Norm Bold'; }
+
+p { margin : 0 0 1.5em 0; }
+
+ul {
+
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+
+	li {  }
+
+}
+
+a { color: $zwart; text-decoration: none;}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+
+p a, #story a, #page a { color: $zwart; /*border-bottom: 1px solid $blauw; */
+
+    border-bottom: 1px solid $zwart;
+    transition: all 250ms;
+
+ }
+
+
+u { text-decoration: none;  }
+
+.datum,.light,.authors { 
+
+	font-family:'Cabrito Sans W01 Ext Light';
+	font-weight: normal;
+}
+
+
+
+.light { 
+	@include lightText();
+ }
+
+.highlight {
+
+	//background: $geel;
+}
+
+// bullets
+
+@mixin bullets {
+
+	ul {
+
+		margin-bottom: 1.5em;
+
+		li {
+
+			padding-left: 1.25em;
+			text-indent: -.4em;
+			position: relative;
+
+			@media all and (-ms-high-contrast:none) {
+				padding-left: 0;
+				left: 1.5rem;
+			}
+		}
+
+		li::before {
+
+			content: '. ';
+			color: black;
+			font-size: 60px;
+			position: absolute;
+			left: 0;
+			line-height: 0.225;
+			top: -.8rem;
+
+			@media (min-width: $breakpoint-md) {
+				top: -.55rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 600px) {
+
+	h1 { font-size: 2rem; line-height: 2.75rem; } 
+}

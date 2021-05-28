@@ -1,0 +1,47 @@
+button, input[type=submit] {
+
+	//@extend h2;
+	position: relative;
+	overflow: hidden;
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 1em;
+	//background: $donkerrood;
+	color: black;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0;
+	//box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+
+	&:hover {
+		//background: $rood;
+	}
+
+	&:disabled {
+		font-size: 0;
+	}
+
+	&.large {
+
+		width: calc(1220px / 3);
+		//background: $blauw;
+		color: $wit;
+
+		&:hover {
+			background: $wit;
+		}
+	}
+
+	&.grey {
+
+		background: $grijs;
+		color: $zwart;
+
+		span:after {
+			border-top-color: $donkergrijs;
+		}
+	}
+
+}
